@@ -1,7 +1,7 @@
 # FABRIKSolver
 ![GIF of FABRIK Solver](https://github.com/johnmanardiii/FABRIKSolver/blob/main/images/fabrik.gif?raw=true)
 
-Done as a project for a computer animation class at Cal Poly, this project demonstrates a simple impmlementation of FABRIK (forwards and backwards inverse kinematics).
+Done as a project for a computer animation class at Cal Poly, this project demonstrates a simple impmlementation of FABRIK.
 
 The arm is divided into three segments of a specific length and then calculates 3 final positions for each arm segment based on a randomly selected target (one of the white spheres) using FABRIK. Once it calculates a final valid set of positions for each of the different points on the arm, the arm animates to that final position. Animation is done by slerping between the initial forward direction of the arm segment to the final forward direction of the arm segment, calculated using the difference of the start and end point of each arm. Each arm segment (line) is then placed under the constraint that it starts where the previous arm segment ended.
 
